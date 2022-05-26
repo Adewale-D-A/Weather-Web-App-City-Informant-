@@ -1,5 +1,5 @@
 .searchInputs {
-  margin-top: 105px;
+  margin-top: 20px;
   display: flex;
 }
 
@@ -40,9 +40,6 @@ input:focus {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   overflow: hidden;
   overflow-y: auto;
-}
-.removeStyle {
-  display: none;
 }
 
 .dataResult::-webkit-scrollbar {
