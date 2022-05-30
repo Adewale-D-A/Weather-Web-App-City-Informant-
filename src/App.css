@@ -1,7 +1,9 @@
 body {
-  background-image: url("./staticComponents/image_slider.png");
+  background-image: url("./staticComponents/background-display.gif");
   image-resolution: 100%;
   background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: contain;
   margin: 0;
   padding: 0;
   height: 100vw;
@@ -13,11 +15,91 @@ body {
   justify-content: center;
   height: 50vw;
 }
+.searchInputs {
+  margin-top: 20px;
+  display: flex;
+  /* position: fixed; */
+}
+.input-0 {
+  width: 50vw;
+  padding: 10px;
+}
+.dataResult {
+  margin-top: 5px;
+  width: 50vw;
+  height: 200px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  overflow: hidden;
+  overflow-y: auto;
+  z-index: 1;
+}
+
+.dataResult::-webkit-scrollbar {
+  display: none;
+}
+
+.dataResult .dataItem {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+
+.dataItem p {
+  margin-left: 10px;
+}
+
+div.dataItem:hover {
+  background-color: lightgrey;
+  cursor: pointer;
+}
 @media only screen and (max-width: 1000px) {
   .big-picture-1 {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vw;
+  }
+  body {
+    background-image: url("./staticComponents/responsiveBackground.gif");
+    image-resolution: 100%;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: 100vw;
+    /* background-blend-mode: darken; */
+    margin: 0;
+    padding: 0;
+    height: 100vw;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 750px) {
+  body {
+    background-image: url("./staticComponents/responsiveBackground.gif");
+    image-resolution: 100%;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: 150vw;
+    /* background-blend-mode: darken; */
+    margin: 0;
+    padding: 0;
+    height: 100vw;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 500px) {
+  body {
+    background-image: url("./staticComponents/responsiveBackground.gif");
+    image-resolution: 100%;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: 200vw;
+    /* background-blend-mode: darken; */
+    margin: 0;
+    padding: 0;
+    height: 100vw;
+    overflow: hidden;
   }
 }
