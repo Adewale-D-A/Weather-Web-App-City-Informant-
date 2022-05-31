@@ -19,7 +19,7 @@ function SearchBar({ city, country }) {
   const [descr, setDescr] = useState("");
   const [sunrise, setSunrise] = useState("");
   const [sunSet, setSunSet] = useState("");
-  const [sunsetTranslate, setSunsetTranslate] = useState(0);
+  // const [sunsetTranslate, setSunsetTranslate] = useState(0);
 
   const WeatherParameters = (city, country) => {
     axios({
