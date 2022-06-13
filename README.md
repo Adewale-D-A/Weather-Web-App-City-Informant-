@@ -1,1 +1,1 @@
-Weather and City Infomation Web App created by Adewale. credits to openweather.org for the API used to fetch the data.
+This branch is the most recent version of the standalone weather app. App name is City-informat and it is currntly the deployed app for the webapp.
