@@ -10,10 +10,11 @@ body {
   overflow: hidden;
 }
 .big-picture-1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 50vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .searchInputs {
   margin-top: 20px;
